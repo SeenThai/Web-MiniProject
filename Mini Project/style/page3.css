@@ -1,0 +1,244 @@
+@import url('https://fonts.cdnfonts.com/css/snowstorm');
+
+.page3{
+    width: 100%;
+    height: 100%;
+    top: 200%;
+    position: absolute;
+    z-index: 20;
+}
+
+.BG-3{
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+}
+
+.alart{
+    display: none;
+    filter: drop-shadow(0px 0px 15px black);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 120;
+}
+
+.BG-alart{
+    background-color: black;
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.box-alart button{
+    border-radius: 10px;
+    font-size: 20px;
+    left: 15em;
+    top: 4.5em;
+    background: rgb(253, 206, 51);
+    padding: 5px 20px;
+    position: absolute;
+    font-family: 'Snowstorm';
+    font-weight: 1000;
+    transition: all 0.5s ease;
+}
+
+.box-alart button:hover{
+    background: crimson;
+    color: aliceblue;
+}
+
+.box-alart{
+    filter: drop-shadow(0px 0px 15px rgb(254, 253, 253));
+    left: 35%;
+    top: 40%;
+    position: absolute;
+}
+
+img.text-alart{
+    position: absolute;
+    width: 30em;
+    height: 10em;
+}
+img.ch-alart{
+    position: absolute;
+    width: 15em;
+    height: 15em;
+    top: -6.5em;
+    left: -3.5em;
+}
+
+.box-alart h2{
+    font-family: 'Snowstorm';
+    position: absolute;
+    left: 9em;
+    top: 1.5em;
+    width: 10em;
+    height: 2em;
+}
+
+
+.box-TopUp{
+    position: absolute;
+    width: 80%;
+    height: 30em;
+    top: 20%;
+    z-index: 1;
+    left: 10%;
+}
+
+.select-TopUp{
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: space-around;
+    width: 11em;
+    background: rgb(20, 179, 247);
+    filter: drop-shadow(0px 0px 15px black);
+}
+
+.box-TopUp h3{
+    color: rgb(254, 204, 65);
+    filter: drop-shadow(0px 0px 5px rgb(104, 104, 244));
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Snowstorm';
+}
+
+.select-TopUp h4{
+    font-family: 'Snowstorm';
+}
+
+.showTopUp{
+    position: absolute;
+    top: 30%;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    height: 10em;
+}
+
+.select-TopUp img{
+    width: 50%;
+    height: 50%;
+}
+
+.select-TopUp button{
+    margin: 10px 0px;
+    border-radius: 10px;
+    font-family: 'Snowstorm';
+    width: 100%;
+    height: 2em;
+}
+
+.BG-4{
+    background: black;
+    border-radius: 20px;
+    position: absolute;
+    width: 80%;
+    height: 30em;
+    top: 20%;
+    z-index: 1;
+    left: 10%;
+    opacity: 60%;
+    filter: drop-shadow(0px 0px 15px black);
+}
+
+.popup-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.BG-5{
+    position: absolute;
+    background: black;
+    opacity: 70%;
+    width: 100%;
+    height: 100%;
+    z-index: 199;
+}
+.box-card{
+    font-family: 'Snowstorm';
+    display: flex;
+    z-index: 201;
+    background: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 10px white);
+}
+.box-card img{
+    width: 15em;
+    height: 20em;
+    margin: 20px;
+}
+.name-card{
+    margin: 50px;
+}
+.name-card button{
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Snowstorm';
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+    position: absolute;
+    right: 25%;
+    background: rgb(250, 201, 41);
+    transition: all 0.5s ease;
+}
+.name-card button:hover{
+    padding: 20px 60px;
+    background: rgb(237, 40, 1);
+    color: aliceblue;
+}
+.name-card h1{
+    font-size: 50px;
+    color: rgb(244, 192, 20);
+    filter: drop-shadow(0px 0px 2px rgb(5, 103, 207));
+}
+.name-card h2{
+    margin: 20px;
+}
+.card-move-3d{
+    perspective: 1000px;
+}
+#img-card{
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 10px black);
+}
+.light-ray {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+.light-ray::before {
+    z-index: 300;
+    content: '';
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    width: 30%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.559);
+    transform: rotate(45deg);
+    pointer-events: none;
+    animation: light-ray 2.5s ease-in-out infinite;
+}
+
+@keyframes light-ray {
+    0% {
+        top: -150%;
+        left: -150%;
+    }
+    100% {
+        top: 150%;
+        left: 150%;
+    }
+}

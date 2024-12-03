@@ -1,0 +1,450 @@
+@import url('https://fonts.cdnfonts.com/css/snowstorm');
+
+.page2{
+    height: 100%;
+    width: 100%;
+    top: 100%;
+
+    position: absolute;
+    z-index: 11;
+    background-repeat: no-repeat;
+}
+
+.BG-2{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+}
+
+.tank{
+    width: 100%;
+    position: absolute;
+    height: 90%;
+    top: 10%;
+
+}
+
+.fish{
+    display: flex;
+    z-index: 16;
+    position: absolute;
+    transition: transform 0.2s;
+    caret-color: transparent;
+}
+
+.fish img{
+    width: 100px;
+    height: 50px;
+    filter: drop-shadow(10px 5px 10px rgba(249, 251, 148, 0.56));
+}
+
+nav{
+    font-family: 'Snowstorm', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+    display: flex;
+    background: rgb(40, 39, 39);
+    width: 100%;
+    height: 15%;
+    box-shadow: 0px 10px 15px rgb(35, 35, 35);
+}
+
+nav img{
+    width: 10em;
+    height: 4em;
+    margin-left: 50px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-right: 8em;
+}
+
+nav ul li{
+    margin-right: 50px;
+}
+
+nav ul li a{
+    font-size: 20px;
+    color: yellow;
+    text-decoration: 2px underline transparent;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: 2px underline yellow;
+}
+
+.iconPhone{
+    display: flex;
+    z-index: 100;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: 5em;
+    height: 5em;
+    filter: drop-shadow(0px 0px 10px yellow);
+    transition: all 0.5s ease;
+    animation: Shank 1s ease;}
+
+.iconPhone:hover{
+    bottom: 10%;
+}
+
+.amount-cart{
+    position: absolute;
+    background: crimson;
+    border-radius: 20%;
+    width: 30px;
+    height: 30px;
+    font-family: 'Snowstorm', sans-serif;
+    text-align: center;
+    justify-content: center;
+    left: -15%;
+    top: -10%;
+    display: none;
+}
+
+.iconPhone button{
+    background: transparent;
+    border: none;
+}
+
+.iconPhone button img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+.phone{
+    z-index: 100;
+    filter: drop-shadow(0px 00px 15px rgb(255, 255, 255));
+    left: 40%;
+    bottom: -35em;
+    width: 19.5em;
+    height: 30em;
+    background: url('../Resource/phone.jpg');
+    position: fixed;
+    border-radius: 35px 35px 0px 0px;
+    transition: bottom 0.5s ease;
+}
+
+.slots-row{
+    margin-top: 40px;
+    width: 100%;
+    height: 70%;
+}
+
+.slots-row div{
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Snowstorm', sans-serif;
+}
+
+.slots-row div button{
+    border-radius: 10px;
+    background: crimson;
+    color: aliceblue;
+    padding: 2px 10px;
+    font-family: 'Snowstorm', sans-serif;
+    transition: all 0.5s ease;
+    border: none;
+}
+
+.slots-row div button:hover{
+    background: aliceblue;
+    color: crimson;
+}
+
+#slot-buy{
+    margin-top: 10px;
+    background-color: rgb(43, 205, 226);
+    width: 100%;
+    height: 30%;
+}
+
+.slots-select{
+    top: 38px;
+    left: 5px;
+    position: absolute;
+    width: 18.8em;
+    height: 90%;
+}
+
+.BG-total{
+    position: absolute;
+    background: rgba(181, 181, 242, 0.449);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    height:40px;
+    width: 100%;
+}
+
+.total{
+    align-content: center;
+    font-family: 'Snowstorm', sans-serif;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    background: aliceblue;
+    border-radius: 20px;
+
+}
+
+.buy{
+    position: absolute;
+    padding: 5px 20px;
+    background: rgb(247, 224, 18);
+    border-radius: 10px;
+    bottom: 10%;
+    left: 5%;
+    transition: all 0.5s ease;
+}
+
+.buy button{
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    font-family: 'Snowstorm', sans-serif;
+    font-size: 25px;
+    padding: 0px 20px;
+}
+
+.buy:hover{
+    background: orange;
+}
+
+.close{
+    bottom: 10%;
+    right: 5%;
+    position: absolute;
+    background: rgb(52, 52, 52);
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.close button{
+    padding: 0px 10px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Snowstorm', sans-serif;
+    font-size: 25px;
+    color: whitesmoke;
+    background: transparent;
+}
+
+.close:hover{
+    background: crimson;
+}
+
+.fish-BT{
+    z-index: 100;
+    position: absolute;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    border: none;
+    right: 220px;
+    top: 5px;
+    transition: all 0.5s ease;
+    opacity: 50%;
+}
+
+.fish-BT:hover{
+    opacity: 100%;
+}
+
+.fish-BT img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.cashBar{
+    z-index: 90;
+    top: 17%;
+    right: 1%;
+    filter: drop-shadow(0px 0px 5px black);
+    position: absolute;
+    font-size: 20px;
+    width: 170px;
+    height:60px;
+}
+
+.cashBar img{
+    width: 100%;
+    height: 100%;
+}
+
+.money{
+    top: 20%;
+    right: 30%;
+    position: absolute;
+    font-family: 'Snowstorm', sans-serif;
+    font-size: 25px;
+}
+
+.BG-slot{
+    pointer-events: none;
+    background: black;
+    opacity: 50%;
+    width: 80%;
+    height: 75%;
+    top: 20%;
+    left: 6%;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.BG-slot h1{
+    margin-top: 5px;
+    margin-left: 50px;
+    color: #ffffff;
+    font-family: 'Snowstorm', sans-serif;
+    font-size: 50px;
+}
+
+.BG-slot h2{
+    font-family: 'Snowstorm', sans-serif;
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 30px;
+}
+
+.slots-crad{
+    width: 80em;
+    display: flex;
+    left: 5%;
+    top: 30%;
+    z-index: 15;
+    position: absolute;
+    pointer-events: none;
+}
+.slots-crad2{
+    width: 80em;
+    display: flex;
+    left: 5%;
+    top: 62%;
+    z-index: 15;
+    position: absolute;
+    pointer-events: none;
+}
+
+
+.card{
+    pointer-events: auto;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: transparent;
+    width: 150px;
+    height: 200px;
+}
+  
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+  
+.card-font, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+  
+.card-font{
+    background-color: transparent;
+    color: black;
+}
+
+.card-font img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card-back{
+    border: 3px solid rgb(158, 129, 0);
+    font-family: 'Snowstorm', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #f6f1df;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+}
+
+.card-back h6{
+    padding: 10px 0px;
+    background: rgb(237, 204, 57);
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.card-back p{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.card-back button{
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    background: #ffffff;
+    border-radius: 10px;
+    bottom: 0;
+    font-family: 'Snowstorm', sans-serif;
+    padding: 5px 15px;
+    transition: all 0.5s ease;
+}
+
+.card-back button box-icon{
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.card-back button:hover{
+    background: rgb(237, 204, 57);
+    padding: 5px 25px;
+}
+
+
+.darkWeb{
+    position: absolute;
+    z-index: 99;
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    display: none;
+    transition:all 1s ease;
+}

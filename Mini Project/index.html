@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave The Diver</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/page2.css">
+    <link rel="stylesheet" href="./style/page3.css">
+    <link rel="icon" href="./Resource/logoWeb.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="alart" id="section-alart">
+        <div class="BG-alart"></div>
+        <div class="box-alart">
+            <img src="./Resource/text.png" class="text-alart">
+            <img src="./Resource/Sammy.png" class="ch-alart">
+            <h2 id="alart">asfafa</h2>
+            <button onclick="closeAlart()">CLOSE</button>
+        </div>
+    </div>
+
+    <img class="BG-2" src="./Resource/web-deep.jpg">
+    <div class="audio-box">
+    <button onclick="stopAndPlay()">
+        <audio id="audio" src="./Resource/Dave the Diver OST.mp3" loop autoplay></audio>
+        <img src="./Resource/disk.gif" class="img-play" id="playImg">
+        <img src="./Resource/disk.png" class="img-stop" id="stopImg">
+    </button>
+    </div>
+    
+    <section class="page1" id="p-1">
+        <img class="BG-1" src="./Resource/background.png">
+        <img class="banner" src="./Resource/logo.png">
+        <img class="boat" src="./Resource/boat.png">
+        <img class="Ch1" src="./Resource/character.png">
+        <div class="wave"></div>
+        <a href="#p-2" class="goToPage2"><box-icon name='chevrons-down' color="white"></box-icon></a>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+    <section class="page2" id="p-2">
+        <div class="tank" id="tank">
+            <div class="fish" id="fish"><img src="./Resource/fish1.png"></div>
+        </div>
+
+        <div class="popup-card" id="popup-card">
+            <div class="BG-5"></div>
+            <div class="box-card">
+                <div class="card-move-3d">
+                    <div class="light-ray">
+                        <img id="img-card">
+                    </div>
+                </div>
+                <div class="name-card">
+                    <h1 id="name-Card-popup"></h1>
+                    <h2 id="money-Card-popup"></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Expedita officia deserunt numquam at a nam atque ea excepturi hic non.<br>Explicabo sequi eligendi cupiditate veniam modi, nesciunt laborum blanditiis voluptatibus.</p>
+                    <button onclick="BTdetails()">Cancel</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="phone" id="phone">
+            <div class="slots-select">
+                <div class="slots-row">
+                </div>
+
+                <div class="BG-total">
+                    <div class="total">
+                        <p id="total">afe</p>
+                    </div>
+                </div>
+
+                <div class="BTphone">
+                    <div class="buy">
+                        <button id="buy" onclick="buy()">
+                            <box-icon name='cart'></box-icon>
+                            Buy
+                        </button>
+                    </div>
+
+                    <div class="close">
+                        <button id="close" onclick="usePhone()">
+                            Close
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <nav>
+            <a href="#p-1">
+                <img src="./Resource/logo.png">
+            </a>
+            <ul>
+                <li><a href="#p-1" onclick="closePhone()">HOME</a></li>
+                <li><a href="#p-2" onclick="closePhone()">CARD SHOP</a></li>
+                <li><a href="#p-3" onclick="closePhone()">TOP UP</a></li>
+            </ul>
+            <div></div>
+        </nav>
+
+        <button class="fish-BT" id="fish-BT" onclick="BTfish()">
+            <img src="./Resource/fish1.png">
+            <img src="./Resource/ban.png">
+        </button>
+
+        <div class="iconPhone" id="iconPhone">
+            <h1 class="amount-cart" id="amount-cart">0</h1>
+            <button onclick="usePhone()">
+                <img src="./Resource/icon-head.png">
+            </button>
+        </div>
+
+        <div class="cashBar">
+            <img src="./Resource/text.png">
+            <h3 class="money" id="money"></h3>
+        </div>
+
+        <div class="darkWeb" id="darkWeb"></div>
+        <div class="BG-slot">
+            <h1>Card Hot ToDay :</h1>
+            <h2 id="time"></h2>
+        </div>
+
+        <div class="slots-crad">
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-font">
+                        <img src="./Resource/card/card1.png">
+                    </div>
+                    <div class="card-back"  data-value2="Sheepshead" value="30">
+                        <h6>Sheepshead</h6>
+                        <p>30 $</p>
+                        <button onclick="BTdetails('card1','Sheepshead',30)">DETAILS</button>
+                        <button id="cart"><box-icon name='cart-add'></box-icon>CART</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-font">
+                        <img src="./Resource/card/card2.png">
+                    </div>
+                    <div class="card-back"  data-value2="Yellowfin Tuna" value="10">
+                        <h6>Yellowfin Tuna</h6>
+                        <p>10 $</p>
+                        <button onclick="BTdetails('card2','Yellowfin Tuna',10)">DETAILS</button>
+                        <button id="cart"><box-icon name='cart-add'></box-icon>CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-font">
+                        <img src="./Resource/card/card3.png">
+                    </div>
+                    <div class="card-back"  data-value2="Sailfish" value="50">
+                        <h6>Sailfish</h6>
+                        <p>50 $</p>
+                        <button onclick="BTdetails('card3','Sailfish',50)">DETAILS</button>
+                        <button id="cart"><box-icon name='cart-add'></box-icon>CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-font">
+                        <img src="./Resource/card/card4.png">
+                    </div>
+                    <div class="card-back"  data-value2="Shartfin Mako" value="150">
+                        <h6>Shartfin Mako</h6>
+                        <p>150 $</p>
+                        <button onclick="BTdetails('card4','Shartfin Mak',150)">DETAILS</button>
+                        <button id="cart"><box-icon name='cart-add'></box-icon>CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-font">
+                        <img src="./Resource/card/card5.png">
+                    </div>
+                    <div class="card-back"  data-value2="Zebra Shark" value="100">
+                        <h6>Zebra Shark</h6>
+                        <p>100 $</p>
+                        <button onclick="BTdetails('card5','Zebra Shark',100)">DETAILS</button>
+                        <button id="cart"><box-icon name='cart-add'></box-icon>CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-font">
+                        <img src="./Resource/card/crad6.png">
+                    </div>
+                    <div class="card-back"  data-value2="Ruby Seadragon" value="300">
+                        <h6>Ruby Seadragon</h6>
+                        <p>300 $</p>
+                        <button onclick="BTdetails('crad6','Ruby Seadragon',300)">DETAILS</button>
+                        <button id="cart"><box-icon name='cart-add'></box-icon>CART</button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="slots-crad2">
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-font">
+                        <img src="./Resource/card/crad7.png">
+                    </div>
+                    <div class="card-back"  data-value2="Marlin" value="40">
+                        <h6>Marlin</h6>
+                        <p>40 $</p>
+                        <button onclick="BTdetails('crad7','Marlin',40)">DETAILS</button>
+                        <button id="cart"><box-icon name='cart-add'></box-icon>CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-font">
+                        <img src="./Resource/card/crad8.png">
+                    </div>
+                    <div class="card-back"  data-value2="Bluefin Tuna" value="120">
+                        <h6>Bluefin Tuna</h6>
+                        <p>120 $</p>
+                        <button onclick="BTdetails('crad8','Bluefin Tuna',120)">DETAILS</button>
+                        <button id="cart"><box-icon name='cart-add'></box-icon>CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-font">
+                        <img src="./Resource/card/crad9.png">
+                    </div>
+                    <div class="card-back"  data-value2="Striped Catfish" value="60">
+                        <h6>Striped Catfish</h6>
+                        <p>60 $</p>
+                        <button onclick="BTdetails('crad9','Striped Catfish',60)">DETAILS</button>
+                        <button id="cart"><box-icon name='cart-add'></box-icon>CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-font">
+                        <img src="./Resource/card/card3.png">
+                    </div>
+                    <div class="card-back" data-value2="Sailfish" value="50">
+                        <h6>Sailfish</h6>
+                        <p>50 $</p>
+                        <button onclick="BTdetails('card3','Sailfish',50)">DETAILS</button>
+                        <button id="cart"><box-icon name='cart-add'></box-icon>CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-font">
+                        <img src="./Resource/card/card1.png">
+                    </div>
+                    <div class="card-back"  data-value2="Sheepshead" value="30">
+                        <h6>Sheepshead</h6>
+                        <p>30 $</p>
+                        <button onclick="BTdetails('card1','Sheepshead',30)">DETAILS</button>
+                        <button id="cart"><box-icon name='cart-add'></box-icon>CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-font">
+                        <img src="./Resource/card/crad9.png">
+                    </div>
+                    <div class="card-back"  data-value2="Striped Catfish" value="60">
+                        <h6>Striped Catfish</h6>
+                        <p>60 $</p>
+                        <button onclick="BTdetails('crad9','Striped Catfish',60)">DETAILS</button>
+                        <button id="cart"><box-icon name='cart-add'></box-icon>CART</button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        
+        
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+
+    <section class="page3" id="p-3">
+
+        <div class="cashBar">
+            <img src="./Resource/text.png">
+            <h3 class="money" id="money2"></h3>
+        </div>
+
+        <nav>
+            <a href="#p-1">
+                <img src="./Resource/logo.png">
+            </a>
+            <ul>
+                <li><a href="#p-1" onclick="closePhone()">HOME</a></li>
+                <li><a href="#p-2" onclick="closePhone()">CARD SHOP</a></li>
+                <li><a href="#p-3" onclick="closePhone()">TOP UP</a></li>
+            </ul>
+            <div></div>
+        </nav>
+
+        <div class="BG-4"></div>
+        <div class="box-TopUp">
+            <h3>TOP UP</h3>
+            <div class="showTopUp">
+                <div class="select-TopUp">
+                    <img src="./Resource/coin.png">
+                    <h4>35 Baht = 100 $</h4>
+                    <button onclick="topUp(35,100)">BUY</button>
+                </div>
+                <div class="select-TopUp">
+                    <img src="./Resource/coin.png">
+                    <h4>99 Baht = 350 $</h4>
+                    <button onclick="topUp(99,350)">BUY</button>
+                </div>
+                <div class="select-TopUp">
+                    <img src="./Resource/coin.png">
+                    <h4>299 Baht = 1000 $</h4>
+                    <button onclick="topUp(299,1000)">BUY</button>
+                </div>
+                <div class="select-TopUp">
+                    <img src="./Resource/coin.png">
+                    <h4>599 Baht = 2100 $</h4>
+                    <button onclick="topUp(599,2100)">BUY</button>
+                </div>
+            </div>
+            <a></a>
+        </div>
+        
+        <img src="./Resource/web-deep.jpg" class="BG-3">
+    </section>
+    
+    <script src="./script/time.js" defer></script>
+    <script src="/script/cardAn.js"></script>
+    <script src="./script/cart.js"></script>
+    <script src="./script/Audio.js"></script>
+    <script src="./script/phone.js"></script>
+    <script src="./script/Fish.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+</body>
+</html>
